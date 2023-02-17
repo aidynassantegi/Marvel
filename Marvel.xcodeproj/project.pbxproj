@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		645CEA2B299F7D590003503F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645CEA2A299F7D590003503F /* AppDelegate.swift */; };
 		645CEA2D299F7D590003503F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645CEA2C299F7D590003503F /* SceneDelegate.swift */; };
-		645CEA2F299F7D590003503F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645CEA2E299F7D590003503F /* ViewController.swift */; };
 		645CEA34299F7D5C0003503F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 645CEA33299F7D5C0003503F /* Assets.xcassets */; };
 		645CEA37299F7D5C0003503F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645CEA35299F7D5C0003503F /* LaunchScreen.storyboard */; };
 		645CEA42299F7D5C0003503F /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645CEA41299F7D5C0003503F /* MarvelTests.swift */; };
 		645CEA4C299F7D5C0003503F /* MarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645CEA4B299F7D5C0003503F /* MarvelUITests.swift */; };
 		645CEA4E299F7D5C0003503F /* MarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645CEA4D299F7D5C0003503F /* MarvelUITestsLaunchTests.swift */; };
+		64971D30299FBE24001DBDBA /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D2F299FBE24001DBDBA /* ForgotPasswordViewController.swift */; };
+		64971D32299FBE2C001DBDBA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D31299FBE2C001DBDBA /* HomeViewController.swift */; };
+		64971D34299FBE37001DBDBA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D33299FBE37001DBDBA /* LoginViewController.swift */; };
+		64971D36299FBE40001DBDBA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D35299FBE40001DBDBA /* RegisterViewController.swift */; };
+		64971D3B299FBE98001DBDBA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 64971D3A299FBE98001DBDBA /* SnapKit */; };
+		64971D3E299FBF5B001DBDBA /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D3D299FBF5B001DBDBA /* AuthHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		645CEA27299F7D590003503F /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645CEA2A299F7D590003503F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		645CEA2C299F7D590003503F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		645CEA2E299F7D590003503F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		645CEA33299F7D5C0003503F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		645CEA36299F7D5C0003503F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		645CEA38299F7D5C0003503F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,11 @@
 		645CEA47299F7D5C0003503F /* MarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		645CEA4B299F7D5C0003503F /* MarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITests.swift; sourceTree = "<group>"; };
 		645CEA4D299F7D5C0003503F /* MarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64971D2F299FBE24001DBDBA /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		64971D31299FBE2C001DBDBA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		64971D33299FBE37001DBDBA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		64971D35299FBE40001DBDBA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		64971D3D299FBF5B001DBDBA /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64971D3B299FBE98001DBDBA /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,10 +107,14 @@
 		645CEA29299F7D590003503F /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
-				645CEA2A299F7D590003503F /* AppDelegate.swift */,
+				64971D35299FBE40001DBDBA /* RegisterViewController.swift */,
+				64971D33299FBE37001DBDBA /* LoginViewController.swift */,
+				64971D2F299FBE24001DBDBA /* ForgotPasswordViewController.swift */,
+				64971D31299FBE2C001DBDBA /* HomeViewController.swift */,
+				64971D3C299FBF4E001DBDBA /* Views */,
 				6485D602299FAC52007EB4F0 /* Resources */,
+				645CEA2A299F7D590003503F /* AppDelegate.swift */,
 				645CEA2C299F7D590003503F /* SceneDelegate.swift */,
-				645CEA2E299F7D590003503F /* ViewController.swift */,
 				645CEA35299F7D5C0003503F /* LaunchScreen.storyboard */,
 				645CEA38299F7D5C0003503F /* Info.plist */,
 			);
@@ -132,6 +146,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		64971D3C299FBF4E001DBDBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64971D3D299FBF5B001DBDBA /* AuthHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +171,7 @@
 			);
 			name = Marvel;
 			packageProductDependencies = (
+				64971D3A299FBE98001DBDBA /* SnapKit */,
 			);
 			productName = Marvel;
 			productReference = 645CEA27299F7D590003503F /* Marvel.app */;
@@ -223,6 +246,7 @@
 			);
 			mainGroup = 645CEA1E299F7D590003503F;
 			packageReferences = (
+				64971D39299FBE98001DBDBA /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 645CEA28299F7D590003503F /* Products */;
 			projectDirPath = "";
@@ -266,9 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				645CEA2F299F7D590003503F /* ViewController.swift in Sources */,
 				645CEA2B299F7D590003503F /* AppDelegate.swift in Sources */,
 				645CEA2D299F7D590003503F /* SceneDelegate.swift in Sources */,
+				64971D30299FBE24001DBDBA /* ForgotPasswordViewController.swift in Sources */,
+				64971D36299FBE40001DBDBA /* RegisterViewController.swift in Sources */,
+				64971D34299FBE37001DBDBA /* LoginViewController.swift in Sources */,
+				64971D32299FBE2C001DBDBA /* HomeViewController.swift in Sources */,
+				64971D3E299FBF5B001DBDBA /* AuthHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +628,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64971D39299FBE98001DBDBA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64971D3A299FBE98001DBDBA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64971D39299FBE98001DBDBA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 645CEA1F299F7D590003503F /* Project object */;
 }

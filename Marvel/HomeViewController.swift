@@ -1,19 +1,20 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  Marvel
 //
 //  Created by Aidyn Assan on 17.02.2023.
 //
 
 import UIKit
+import SnapKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
+        setupUI()
     }
-
-
+    
+    private func setupUI() {
+    }
 }
-
