@@ -148,6 +148,8 @@
 			dependencies = (
 			);
 			name = Marvel;
+			packageProductDependencies = (
+			);
 			productName = Marvel;
 			productReference = 645CEA27299F7D590003503F /* Marvel.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +222,8 @@
 				Base,
 			);
 			mainGroup = 645CEA1E299F7D590003503F;
+			packageReferences = (
+			);
 			productRefGroup = 645CEA28299F7D590003503F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
