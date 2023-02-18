@@ -64,6 +64,5 @@ final class AuthHeaderView: UIView {
             make.top.equalTo(titleLabel.snp_bottomMargin).offset(12)
             make.centerX.equalTo(snp_centerXWithinMargins)
         }
-
     }
 }

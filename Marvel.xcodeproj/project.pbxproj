@@ -21,6 +21,8 @@
 		64971D3B299FBE98001DBDBA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 64971D3A299FBE98001DBDBA /* SnapKit */; };
 		64971D3E299FBF5B001DBDBA /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D3D299FBF5B001DBDBA /* AuthHeaderView.swift */; };
 		64971D4029A0FB65001DBDBA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D3F29A0FB65001DBDBA /* CustomTextField.swift */; };
+		64971D4229A13898001DBDBA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D4129A13898001DBDBA /* CustomButton.swift */; };
+		64971D4429A139F5001DBDBA /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D4329A139F5001DBDBA /* GlobalConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		64971D35299FBE40001DBDBA /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		64971D3D299FBF5B001DBDBA /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		64971D3F29A0FB65001DBDBA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		64971D4129A13898001DBDBA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		64971D4329A139F5001DBDBA /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +113,8 @@
 		645CEA29299F7D590003503F /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
-				64971D35299FBE40001DBDBA /* RegisterViewController.swift */,
 				64971D33299FBE37001DBDBA /* LoginViewController.swift */,
+				64971D35299FBE40001DBDBA /* RegisterViewController.swift */,
 				64971D2F299FBE24001DBDBA /* ForgotPasswordViewController.swift */,
 				64971D31299FBE2C001DBDBA /* HomeViewController.swift */,
 				64971D3C299FBF4E001DBDBA /* Views */,
@@ -119,6 +123,7 @@
 				645CEA2C299F7D590003503F /* SceneDelegate.swift */,
 				645CEA35299F7D5C0003503F /* LaunchScreen.storyboard */,
 				645CEA38299F7D5C0003503F /* Info.plist */,
+				64971D4329A139F5001DBDBA /* GlobalConstants.swift */,
 			);
 			path = Marvel;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			children = (
 				64971D3D299FBF5B001DBDBA /* AuthHeaderView.swift */,
 				64971D3F29A0FB65001DBDBA /* CustomTextField.swift */,
+				64971D4129A13898001DBDBA /* CustomButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,6 +301,8 @@
 			files = (
 				645CEA2B299F7D590003503F /* AppDelegate.swift in Sources */,
 				645CEA2D299F7D590003503F /* SceneDelegate.swift in Sources */,
+				64971D4429A139F5001DBDBA /* GlobalConstants.swift in Sources */,
+				64971D4229A13898001DBDBA /* CustomButton.swift in Sources */,
 				64971D30299FBE24001DBDBA /* ForgotPasswordViewController.swift in Sources */,
 				64971D36299FBE40001DBDBA /* RegisterViewController.swift in Sources */,
 				64971D4029A0FB65001DBDBA /* CustomTextField.swift in Sources */,

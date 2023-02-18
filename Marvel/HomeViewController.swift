@@ -16,5 +16,6 @@ class HomeViewController: UIViewController {
     }
     
     private func setupUI() {
+        view.backgroundColor = .systemRed
     }
 }
