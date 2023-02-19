@@ -18,13 +18,26 @@ class RegisterViewController: UIViewController {
     
     private let signupButton = CustomButton(title: "Sign Up", hasBackground: true, fontSize: .big)
     private let termsTextView: UITextView = {
+        let attributedString = NSMutableAttributedString(
+            string: """
+                    By creating an account, you agree to our Terms & Conditions
+                    and you acknowledge that you have read our Privacy Policy.
+                    """)
+        attributedString.addAttribute(.link, value: "terms://termsAndConditions",
+                                      range: (attributedString.string as NSString).range(of: "Terms & Conditions"))
+        
+        attributedString.addAttribute(.link, value: "privacy://privacyAndPolicy",
+                                      range: (attributedString.string as NSString).range(of: "Privacy Policy"))
+                
         let tv = UITextView()
-        tv.text = "By creating an account, I state that I have read and understood the terms and conditions"
+        tv.linkTextAttributes = [.foregroundColor: UIColor.systemBlue]
+        tv.attributedText = attributedString
         tv.backgroundColor = .clear
         tv.textColor = .label
         tv.isSelectable = true
         tv.isEditable = false
         tv.isScrollEnabled = false
+        tv.delaysContentTouches = false
         tv.textAlignment = .center
         return tv
     }()
@@ -42,6 +55,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupButtons()
+        self.termsTextView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -98,13 +112,39 @@ class RegisterViewController: UIViewController {
         self.loginButton.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
     }
     
-    @objc func didTapSignup() {
+    @objc private func didTapSignup() {
         let vc = HomeViewController()
         vc.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    @objc func didTapLogin() {
+    @objc private func didTapLogin() {
         navigationController?.popViewController(animated: true)
+    }
+}
+
+extension RegisterViewController: UITextViewDelegate {
+    
+    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        
+        if URL.scheme == "terms" {
+            self.showWebViewerController(with: "https://policies.google.com/terms?hl=en")
+        } else if URL.scheme == "privacy" {
+            self.showWebViewerController(with: "https://policies.google.com/privacy?hl=en")
+        }
+        
+        return true
+    }
+    
+    private func showWebViewerController(with urlString: String) {
+        let vc = WebViewController(with: urlString)
+        let nav = UINavigationController(rootViewController: vc)
+        self.present(nav, animated: true, completion: nil)
+    }
+    
+    func textViewDidChangeSelection(_ textView: UITextView) {
+        textView.delegate = nil
+        textView.selectedTextRange = nil
+        textView.delegate = self
     }
 }

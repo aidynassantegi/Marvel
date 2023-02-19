@@ -23,6 +23,8 @@
 		64971D4029A0FB65001DBDBA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D3F29A0FB65001DBDBA /* CustomTextField.swift */; };
 		64971D4229A13898001DBDBA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D4129A13898001DBDBA /* CustomButton.swift */; };
 		64971D4429A139F5001DBDBA /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D4329A139F5001DBDBA /* GlobalConstants.swift */; };
+		64971D4629A1FA24001DBDBA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D4529A1FA24001DBDBA /* WebViewController.swift */; };
+		64971D4929A217E6001DBDBA /* AllertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64971D4829A217E6001DBDBA /* AllertManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		64971D3F29A0FB65001DBDBA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		64971D4129A13898001DBDBA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		64971D4329A139F5001DBDBA /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		64971D4529A1FA24001DBDBA /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		64971D4829A217E6001DBDBA /* AllertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllertManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		645CEA29299F7D590003503F /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				64971D4729A1FA2D001DBDBA /* Common */,
 				64971D33299FBE37001DBDBA /* LoginViewController.swift */,
 				64971D35299FBE40001DBDBA /* RegisterViewController.swift */,
 				64971D2F299FBE24001DBDBA /* ForgotPasswordViewController.swift */,
@@ -123,7 +128,6 @@
 				645CEA2C299F7D590003503F /* SceneDelegate.swift */,
 				645CEA35299F7D5C0003503F /* LaunchScreen.storyboard */,
 				645CEA38299F7D5C0003503F /* Info.plist */,
-				64971D4329A139F5001DBDBA /* GlobalConstants.swift */,
 			);
 			path = Marvel;
 			sourceTree = "<group>";
@@ -161,6 +165,16 @@
 				64971D4129A13898001DBDBA /* CustomButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		64971D4729A1FA2D001DBDBA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				64971D4329A139F5001DBDBA /* GlobalConstants.swift */,
+				64971D4529A1FA24001DBDBA /* WebViewController.swift */,
+				64971D4829A217E6001DBDBA /* AllertManager.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				645CEA2B299F7D590003503F /* AppDelegate.swift in Sources */,
+				64971D4929A217E6001DBDBA /* AllertManager.swift in Sources */,
+				64971D4629A1FA24001DBDBA /* WebViewController.swift in Sources */,
 				645CEA2D299F7D590003503F /* SceneDelegate.swift in Sources */,
 				64971D4429A139F5001DBDBA /* GlobalConstants.swift in Sources */,
 				64971D4229A13898001DBDBA /* CustomButton.swift in Sources */,

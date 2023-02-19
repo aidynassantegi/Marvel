@@ -34,9 +34,13 @@ final class LoginViewController: UIViewController {
         setupButtons()
     }
     
+    private var viewAppeared = false
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
+        guard !viewAppeared else { return }
+        self.didTapNewUser()
+        viewAppeared = true
     }
     
     private func setupUI() {
@@ -88,18 +92,19 @@ final class LoginViewController: UIViewController {
         self.forgotButton.addTarget(self, action: #selector(didTapForgot), for: .touchUpInside)
     }
     
-    @objc func didTapSignIn() {
+    @objc private func didTapSignIn() {
         let vc = HomeViewController()
-        vc.modalPresentationStyle = .fullScreen
-        navigationController?.pushViewController(vc, animated: true)
+        let navVC = UINavigationController(rootViewController: vc)
+        navVC.modalPresentationStyle = .fullScreen
+        self.present(navVC, animated: true)
     }
 
-    @objc func didTapNewUser() {
+    @objc private func didTapNewUser() {
         let vc = RegisterViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    @objc func didTapForgot() {
+    @objc private func didTapForgot() {
         let vc = ForgotPasswordViewController()
         navigationController?.pushViewController(vc, animated: true)
     }

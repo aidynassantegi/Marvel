@@ -9,4 +9,5 @@ import Foundation
 
 enum GlobalConstants {
     static var cornerRadius: CGFloat = 12
+    static var fromEdge: CGFloat = 16
 }
